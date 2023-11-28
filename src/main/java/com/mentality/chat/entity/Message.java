@@ -23,9 +23,9 @@ public class Message {
     @Column(name = "message_id")
     private int id;
 
-    @Column(name = "message_text", columnDefinition = "VARCHAR(7000)")
+    @Column(name = "message_text", columnDefinition = "TEXT")
     private String message;
 
-    @Column(name = "message_author")
+    @Column(name = "message_author", columnDefinition = "VARCHAR(20)")
     private String author;
 }
